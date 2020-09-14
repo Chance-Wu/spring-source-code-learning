@@ -1,4 +1,4 @@
-package com.chance.springbeans.beans;
+package com.chance.springbeans.beans.packageinfo;
 
 import java.lang.annotation.ElementType;
 import java.lang.annotation.Retention;

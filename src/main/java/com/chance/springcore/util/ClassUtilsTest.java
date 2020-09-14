@@ -1,6 +1,7 @@
 package com.chance.springcore.util;
 
 import com.chance.dal.entity.Person;
+import org.junit.jupiter.api.Test;
 import org.springframework.util.ClassUtils;
 
 import java.lang.reflect.Method;
@@ -16,7 +17,8 @@ import java.lang.reflect.Method;
  */
 public class ClassUtilsTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         Class<Person> clazz = Person.class;
         // 获取方法
         Method method = ClassUtils.getMethod(clazz, "getName");

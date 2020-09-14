@@ -1,5 +1,6 @@
 package com.chance.springcore.core.env;
 
+import org.junit.jupiter.api.Test;
 import org.springframework.core.env.MapPropertySource;
 
 import java.util.HashMap;
@@ -14,7 +15,8 @@ import java.util.HashMap;
  */
 public class PropertySourceTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         /*Properties properties = new Properties();
         properties.put("name", "chance");
         PropertiesPropertySource source = new PropertiesPropertySource("name", properties);

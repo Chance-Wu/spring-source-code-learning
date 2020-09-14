@@ -1,4 +1,6 @@
-package com.chance.springbeans.beans;
+package com.chance.springbeans.beans.packageinfo;
+
+import org.junit.jupiter.api.Test;
 
 import java.lang.annotation.Annotation;
 
@@ -10,8 +12,10 @@ import java.lang.annotation.Annotation;
  * @author chance
  * @since 2020-09-10
  */
-public class Client {
-    public static void main(String[] args) {
+public class ClientTest {
+
+    @Test
+    public void test() {
         //可以通过I/O操作或配置项获得包名
         String pkgName = "com.company";
         Package pkg = Package.getPackage(pkgName);

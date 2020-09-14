@@ -1,5 +1,6 @@
 package com.chance.springcore.util;
 
+import org.junit.jupiter.api.Test;
 import org.springframework.util.SystemPropertyUtils;
 
 /**
@@ -16,7 +17,8 @@ import org.springframework.util.SystemPropertyUtils;
  */
 public class SystemPropertyUtilsTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         String placeholders = SystemPropertyUtils.resolvePlaceholders("${path:prefix}/${path:suffix}");
         System.out.println(placeholders);
     }

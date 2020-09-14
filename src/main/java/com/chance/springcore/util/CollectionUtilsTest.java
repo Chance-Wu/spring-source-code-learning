@@ -1,5 +1,6 @@
 package com.chance.springcore.util;
 
+import org.junit.jupiter.api.Test;
 import org.springframework.util.CollectionUtils;
 
 import java.util.HashMap;
@@ -15,7 +16,8 @@ import java.util.HashMap;
  */
 public class CollectionUtilsTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         HashMap<Object, Object> map = new HashMap<>(16);
         // 判空
         boolean isEmpty = CollectionUtils.isEmpty(map);

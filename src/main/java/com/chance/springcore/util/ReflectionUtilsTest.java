@@ -1,5 +1,6 @@
 package com.chance.springcore.util;
 
+import org.junit.jupiter.api.Test;
 import org.springframework.util.ReflectionUtils;
 
 /**
@@ -14,7 +15,8 @@ import org.springframework.util.ReflectionUtils;
  */
 public class ReflectionUtilsTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         ReflectionUtils.handleReflectionException(new Exception());
     }
 }

@@ -1,5 +1,6 @@
 package com.chance.springcore.util;
 
+import org.junit.jupiter.api.Test;
 import org.springframework.util.DigestUtils;
 
 /**
@@ -14,7 +15,8 @@ import org.springframework.util.DigestUtils;
  */
 public class DigestUtilsTest {
 
-    public static void main(String[] args) {
+    @Test
+    public void test() {
         String str = "chance";
         String md5DigestAsHex = DigestUtils.md5DigestAsHex(str.getBytes());
         System.out.println(md5DigestAsHex);
