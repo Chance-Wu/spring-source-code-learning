@@ -3,3 +3,12 @@ server:
 spring:
   profiles:
     active: dev
+  application:
+    name: spring-core
+
+userDefine:
+  time: 300
+
+logging:
+  level:
+    org.springframework.beans.factory: debug
